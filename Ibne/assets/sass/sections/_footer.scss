@@ -1,0 +1,112 @@
+/*--------------------------------------------------
+    ##Footer
+---------------------------------------------------*/
+.footer-area {
+	background: url(../img/other/footer.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	padding: 137px 0 0;
+	.widget {
+		margin-bottom: 0;
+	}
+	.widget-title {
+		margin-top: 32px;
+		margin-bottom: 0;
+		color: $color-white;
+		margin-bottom: 15px;
+		font-family: $font-lato;
+	}
+	.copyright-area {
+		margin-top: 78px;
+		p {
+			color: rgba(255,255,255,0.6);
+			border-top: 1px solid rgba(255,255,255,0.4);
+			padding: 35px 0 34px;
+			margin-bottom: 0;
+		}
+	}
+}
+.footer-logo {
+	font-size: 53px;
+	color: $color-white;
+	font-family: $font-jose;
+	&:active,
+	&:focus,
+	&:hover {
+		color: $color-white;
+	}
+}
+.about_us_widget {
+	p {
+		color: rgba(255,255,255,0.8);
+	}
+}
+.widget_nav_menu {
+	ul {
+		padding: 0;
+		margin: 0;
+		padding-top: 5px;
+		li {
+			list-style: none;
+			margin-bottom: 3px;
+			a {
+				color: rgba(255,255,255,0.8);
+				transition: $transition;
+				&:hover {
+					color: $color-white;
+				}
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+.widget_subscribe {
+	margin-top: 32px;
+	.subscribe-form {
+		margin-top: 27px;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+		background: $color-white;
+		border: 1px solid $color-main;
+		border-radius: 3px;
+		position: relative;
+		height: 40px;
+		input {
+			width: 60%;
+			background: transparent;
+			border: 0;
+			font-size: 14px;
+			color: $color-paragraph;
+			padding: 0 10px;
+			height: 98%;
+			border-radius: 3px;
+			&::placeholder {
+				color: $color-paragraph;
+			}
+		}
+		button {
+			height: 40px;
+			box-shadow: -4px 3px 6px rgba(0,0,0,0.16);
+			background: #470174;
+			border-radius: 3px;
+			font-size: 14px;
+			font-weight: 400;
+			color: $color-white;
+			border: 0;
+			padding: 0 20px;
+			position: absolute;
+			right: 0;
+			top: -1px;
+			transition: $transition;
+			padding-bottom: 2px;
+			&:hover {
+				background: $color-heading;
+			}
+		}
+	}
+	.social-area {
+		margin-top: 20px;
+	}
+}

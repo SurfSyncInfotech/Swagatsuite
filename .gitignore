@@ -1,0 +1,81 @@
+# ==========================================
+# Dependencies (Root and all subprojects)
+# ==========================================
+node_modules/
+*/node_modules/
+.pnp
+.pnp.js
+
+# ==========================================
+# Environment Variables & Secrets
+# ==========================================
+.env
+.env.*
+*.env
+*.env.*
+*.local
+!.env.example
+!*/.env.example
+
+# ==========================================
+# Build & Distribution Artifacts
+# ==========================================
+dist/
+*/dist/
+dist-ssr/
+*/dist-ssr/
+build/
+*/build/
+out/
+*/out/
+
+# Vite / Cache directories
+.vite/
+*/.vite/
+.cache/
+*/.cache/
+
+# ==========================================
+# Logs & Diagnostic Files
+# ==========================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==========================================
+# Archives & Deployment Artifacts
+# ==========================================
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+backend/production-deploy.zip
+
+# ==========================================
+# Editor & IDE Directories
+# ==========================================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ==========================================
+# OS Generated Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

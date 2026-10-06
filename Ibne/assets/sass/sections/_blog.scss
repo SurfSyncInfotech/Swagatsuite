@@ -1,0 +1,157 @@
+/*------------------------------------------------
+    blog style
+------------------------------------------------*/
+.latest-blog-wrap {
+	margin-bottom: 70px;
+	.thumb {
+		margin-bottom: 25px;
+		img {
+			width: 100%;
+		}
+	}
+	.latest-blog-details {
+		.card-title {
+			font-size: 30px;
+			font-weight: 400;
+			margin: 0;
+			&:hover a {
+				color: $color-main;
+			}
+		}
+		.meta {
+			border-bottom: 1px solid rgba(31, 42, 75, 0.1);
+			margin-bottom: 23px;
+		    padding-bottom: 25px;
+		    margin-top: 5px;
+			span {
+				font-size: 15px;
+				color: $color-paragraph;
+				margin-right: 27px;
+				i {
+					color: $color-main;
+					margin-right: 7px;
+				}
+			}
+		}
+		p {
+			font-size: 16px;
+			color: $color-paragraph;
+			line-height: 28px;
+			margin-bottom: 7px;
+		}
+		blockquote {
+			border-radius: 10px;
+			background: rgba(109, 40, 217, 0.04);
+			font-size: 18px;
+			color: $color-heading;
+			text-align: center;
+			line-height: 32px;
+			padding: 21px 39px 23px;
+			margin: 35px 0 33px;
+			span {
+				display: block;
+				color: $color-main;
+				margin-bottom: -2px;
+			}
+		}
+		.btn-wrap {
+			margin-top: 25px;
+		}
+		.btn {
+			height: 45px;
+			line-height: 47px;
+			background: transparent;
+			border: 1px solid $color-main;
+			color: $color-main;
+			font-family: $font-jose;
+			padding: 0 30px;
+			&:hover {
+				background: $color-main;
+				color: $color-white;
+			}
+			i {
+				margin-left: 12px;
+			}
+		}
+	}
+}
+
+
+/********* comment area **********/
+.comment-area {
+	border-top: 1px solid rgba(31, 42, 75, 0.1);
+	padding-top: 57px;
+    margin-top: 56px;
+	h5 {
+		font-weight: 400;
+		margin-bottom: 26px;
+	}
+	.media {
+		margin-bottom: 60px;
+		.thumb {
+			border: 1px solid $color-main;
+			border-radius: 50%;
+			img {
+				border-radius: 50%;
+			}
+		}
+		.media-body {
+			margin-left: 30px;
+			h6 {
+				font-size: 16px;
+				font-family: $font-lato;
+				margin-bottom: 4px;
+			}
+			span {
+				font-size: 14px;
+				font-weight: 400;
+				color: $color-paragraph;
+			}
+			p {
+				font-size: 15px;
+				line-height: 28px;
+				color: $color-heading;
+				margin: 11px 0 9px;
+			}
+			.btn {
+				height: 35px;
+				line-height: 32px;
+				padding: 0 28px;
+				border-radius: 3px;
+				font-family: $font-lato;
+
+			}
+		}
+	}
+	.comment-form {
+		background: rgba(109, 40, 217, 0.04);
+		border-radius: 3px;
+		border: 1px solid rgba(109, 40, 217, 0); 
+		padding: 30px;
+		transition: $transition;
+		.single-input-wrap textarea,
+		.single-input-wrap input {
+			background: $color-white;
+			color: rgba(31, 42, 75, 0.4);
+			border: 1px solid rgba(109, 40, 217, 0.1);
+		}
+		&:hover {
+			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+			border: 1px solid rgba(109, 40, 217, 0.01); 
+		}
+		.btn {
+			background: $color-main;
+			color: $color-white;
+			font-size: 15px;
+			font-weight: 400;
+			font-family: $font-lato;
+			height: 45px;
+			line-height: 43px;
+			margin-top: -6px;
+			&:hover {
+				background: $color-heading;
+				border: 1px solid $color-heading;
+			}
+		}
+	}
+}

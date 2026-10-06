@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1983538988900752');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1983538988900752&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!--Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Title-->
+    <title>Swagat Suite - Premium Restaurant QR Ordering & Operations SaaS</title>
+    <meta name="description"
+        content="Swagat Suite is a premium restaurant SaaS platform for QR ordering, live order status tracking, and menu management." />
+    <meta name="api-base-url" content="https://backend.swagatsuite.com">
+
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="assets/img/swagatsuite.png">
+
+    <!--CSS sheet-->
+    <link rel="stylesheet" href="assets/css/vendor.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600%7cNunito:400,600,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader area end -->
+
+    <!-- navbar start -->
+    <div class="navbar-area">
+        <nav class="navbar navbar-area navbar-expand-lg">
+            <div class="container nav-container">
+                <div class="responsive-mobile-menu">
+                    <button class="menu toggle-btn d-block d-lg-none" data-target="#news_main_menu"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-left"></span>
+                        <span class="icon-right"></span>
+                    </button>
+                </div>
+                <div class="logo">
+                    <a href="index.html"><img src="assets/img/swagatsuite.png" alt="Swagat Suite"></a>
+                </div>
+                <div class="collapse navbar-collapse show" id="news_main_menu">
+                    <ul class="navbar-nav menu-open">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right-part nav-right-part-desktop">
+                    <a class="btn btn-white" href="#" data-toggle="modal" data-target="#bookDemoModal">Book Demo</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar end -->
+
+    <!--Banner area-->
+    <section id="home" class="banner-area" style="background-image:url('assets/img/banner/bg.png')">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-5">
+                    <div class="banner-inner text-left">
+                        <h6 class="sub-title">Welcome. Seat. Scan. Serve.</h6>
+                        <h1 class="title">Give every guest a warm digital welcome</h1>
+                        <p>Swagat Suite is a complete restaurant operations platform &mdash; QR ordering, billing,
+                            customer management, live kitchen sync, and revenue analytics, all automated in one
+                            place.</p>
+                        <a class="btn btn-main" href="#" data-toggle="modal" data-target="#bookDemoModal">Book Demo
+                            <i class="fas fa-calendar-check"></i></a>
+                        <a class="btn btn-main-2" href="#pricing">See Pricing</a>
+                    </div>
+                </div>
+                <div class="col-lg-7 d-lg-block d-none">
+                    <div class="banner-img-trio">
+                        <div class="banner-img-card banner-img-card--main">
+                            <div class="banner-img-motion banner-img-motion--float">
+                                <img src="assets/1.png" alt="Waiter serving a guest at the table">
+                            </div>
+                        </div>
+                        <div class="banner-img-card banner-img-card--drink">
+                            <div class="banner-img-motion banner-img-motion--float-delayed">
+                                <img src="assets/2.png" alt="Guest enjoying a drink at the table">
+                            </div>
+                        </div>
+                        <div class="banner-img-card banner-img-card--admin">
+                            <div class="banner-img-motion banner-img-motion--float-delayed">
+                                <img src="assets/3.png" alt="Restaurant manager tracking live operations">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Banner area end-->
+
+    <!--fun fact area start-->
+    <section class="fun-fact-area text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2 class="title">Trusted by growing restaurants</h2>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-fact-wrap">
+                        <h2><span class="counter">50</span><span>+</span></h2>
+                        <p class="fact-title">Restaurants onboarded</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-fact-wrap style-2">
+                        <h2><span class="counter">100</span><span>+</span></h2>
+                        <p class="fact-title">Orders processed</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-fact-wrap style-3">
+                        <h2><span class="counter">30</span><span>%</span></h2>
+                        <p class="fact-title">Avg. revenue uplift</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-fact-wrap">
+                        <h2><span>24/7</span></h2>
+                        <p class="fact-title">Automated operations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--fun fact area end-->
+
+    <!--about-area start-->
+    <section id="about" class="featured-area-2 pd-top-105 pd-bottom-60">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h6 class="sub-title">About</h6>
+                        <h2 class="title">Hospitality-first restaurant operations</h2>
+                        <p>&ldquo;Swagat&rdquo; means welcome. Swagat Suite brings your entire restaurant operation
+                            into one platform &mdash; QR ordering, billing, customer management, kitchen sync, and
+                            revenue analytics &mdash; so your team can automate the busywork and focus on
+                            hospitality.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--about-area end-->
+
+    <!--featured-area start-->
+    <section id="features" class="featured-area text-center pd-top-30 pd-bottom-110">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title">
+                        <h6 class="sub-title">Features</h6>
+                        <h2 class="title">Everything needed for a premium digital restaurant</h2>
+                        <p>From guest delight to kitchen speed and owner visibility.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-featured-wrap">
+                        <div class="thumb">
+                            <div class="after-2"></div>
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                        <h5><a href="#">Table QR Ordering</a></h5>
+                        <p>Guests scan and order instantly with a premium mobile-first menu experience.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-featured-wrap">
+                        <div class="thumb">
+                            <div class="after-2"></div>
+                            <i class="fas fa-satellite-dish"></i>
+                        </div>
+                        <h5><a href="#">Live Status Visibility</a></h5>
+                        <p>Real-time order flow from placed to ready improves trust and reduces table calls.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-featured-wrap">
+                        <div class="thumb">
+                            <div class="after-2"></div>
+                            <i class="fas fa-sliders-h"></i>
+                        </div>
+                        <h5><a href="#">Smart Menu Controls</a></h5>
+                        <p>Update pricing, availability, categories, and item visuals in seconds.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-featured-wrap">
+                        <div class="thumb">
+                            <div class="after-2"></div>
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h5><a href="#">Kitchen + Admin Sync</a></h5>
+                        <p>Operational control with centralized order actions and role-ready dashboards.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-featured-wrap">
+                        <div class="thumb">
+                            <div class="after-2"></div>
+                            <i class="fas fa-border-all"></i>
+                        </div>
+                        <h5><a href="#">Table-Wise Management</a></h5>
+                        <p>Unique QR tokens per table with secure ordering context for each guest session.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-featured-wrap">
+                        <div class="thumb">
+                            <div class="after-2"></div>
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h5><a href="#">Growth Analytics</a></h5>
+                        <p>Track order velocity, revenue trends, and plan insights to scale with confidence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--featured-area end-->
+
+    <!--cta-area start-->
+    <section class="cta-area bg-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 text-lg-left text-center">
+                    <h2>Start your 7 days free trial!</h2>
+                    <p>See how Swagat Suite brings QR ordering, billing, customer insights, and revenue analytics
+                        into one seamless platform for your restaurant.</p>
+                </div>
+                <div class="col-lg-4 text-lg-right text-center align-self-center">
+                    <a class="btn" href="#" data-toggle="modal" data-target="#bookDemoModal">Book Demo <i
+                            class="fas fa-calendar-check"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--cta-area end-->
+
+    <!--overview-area start-->
+    <section id="how-it-works" class="overview-area pd-top-140 mg-bottom-135">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="ibn-inner">
+                        <div class="section-title mb-0">
+                            <h6 class="sub-title">How It Works</h6>
+                            <h2 class="title">Get started in minutes</h2>
+                            <p>Swagat Suite is built to launch fast and run itself &mdash; from table setup to
+                                real-time revenue tracking.</p>
+                        </div>
+                        <ul>
+                            <li><i class="fa fa-angle-right"></i>Set up your menu, tables, and QR codes in
+                                minutes.</li>
+                            <li><i class="fa fa-angle-right"></i>Guests scan, browse, and order without installing
+                                an app.</li>
+                            <li><i class="fa fa-angle-right"></i>Kitchen and admin sync instantly on every order
+                                update.</li>
+                            <li><i class="fa fa-angle-right"></i>Track billing, customers, and revenue from one
+                                dashboard.</li>
+                            <li><i class="fa fa-angle-right"></i>Scale across outlets with role-based access and
+                                automation.</li>
+                        </ul>
+                        <a class="btn btn-main" href="#" data-toggle="modal" data-target="#bookDemoModal">Book
+                            Demo</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-lg-right d-none d-lg-block align-self-center">
+                    <div class="thumb">
+                        <img src="assets/img/other/overview-1.png" alt="Swagat Suite dashboard overview">
+                    </div>
+                </div>
+            </div>
+            <div class="row pd-top-120 overview-section">
+                <div class="col-lg-6 align-self-center d-none d-lg-block">
+                    <div class="thumb">
+                        <img src="assets/img/other/overview-2.png" alt="Swagat Suite order and analytics screens">
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center pl-xl-5">
+                    <div class="section-title">
+                        <h2 class="title">Automate the busywork, focus on hospitality</h2>
+                    </div>
+                    <p>From live status updates to end-of-day billing reconciliation, Swagat Suite automates the
+                        repetitive parts of restaurant operations so your team can focus on guests.</p>
+                    <a class="btn btn-main" href="#pricing">See Pricing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--overview-area end-->
+
+    <!--Pricing-area start-->
+    <section id="pricing" class="pricing-area text-center pd-top-110 pd-bottom-110">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h6 class="sub-title">Pricing</h6>
+                        <h2 class="title">Pricing plans built for growth</h2>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-3 col-lg-6 col-md-6">
+                            <div class="single-price-wrap">
+                                <h5 class="pricing-title">Starter</h5>
+                                <h2 class="pricing-cost">&#8377;999<span>/month</span></h2>
+                                <p class="pricing-desc">Ideal for new cafes and compact dining spaces getting started with digital ordering.</p>
+                                <ul class="pricing-list">
+                                    <li><a href="#">QR menus + live order tracking</a></li>
+                                    <li><a href="#">Menu and table management</a></li>
+                                    <li><a href="#">Email support</a></li>
+                                </ul>
+                                <a class="btn" href="#" data-toggle="modal" data-target="#bookDemoModal">Book Demo</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6">
+                            <div class="single-price-wrap is-popular">
+                                <span class="popular-badge">Most Popular</span>
+                                <h5 class="pricing-title">Pro</h5>
+                                <h2 class="pricing-cost">&#8377;2,499<span>/3 months</span></h2>
+                                <p class="pricing-desc">Built for busy restaurants that want stronger ops control and faster guest service.</p>
+                                <ul class="pricing-list">
+                                    <li><a href="#">Everything in Starter</a></li>
+                                    <li><a href="#">Advanced analytics and insights</a></li>
+                                    <li><a href="#">Priority support</a></li>
+                                </ul>
+                                <a class="btn" href="#" data-toggle="modal" data-target="#bookDemoModal">Book Demo</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6">
+                            <div class="single-price-wrap">
+                                <h5 class="pricing-title">Growth</h5>
+                                <h2 class="pricing-cost">&#8377;6,999<span>/6 months</span></h2>
+                                <p class="pricing-desc">For growing restaurants scaling orders, staff workflows, and repeat customer engagement.</p>
+                                <ul class="pricing-list">
+                                    <li><a href="#">Everything in Pro</a></li>
+                                    <li><a href="#">Loyalty and customer management</a></li>
+                                    <li><a href="#">Revenue and order trend reports</a></li>
+                                </ul>
+                                <a class="btn" href="#" data-toggle="modal" data-target="#bookDemoModal">Book Demo</a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6">
+                            <div class="single-price-wrap">
+                                <h5 class="pricing-title">Elite</h5>
+                                <h2 class="pricing-cost">&#8377;11,999<span>/year</span></h2>
+                                <p class="pricing-desc">Best value for established brands committed to full-year digital hospitality operations.</p>
+                                <ul class="pricing-list">
+                                    <li><a href="#">Everything in Growth</a></li>
+                                    <li><a href="#">Dedicated onboarding assistance</a></li>
+                                    <li><a href="#">Annual savings + premium support</a></li>
+                                </ul>
+                                <a class="btn" href="#" data-toggle="modal" data-target="#bookDemoModal">Book Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Pricing-area end-->
+
+    <!--testimonial-area start-->
+    <section class="testimonial-area text-center pd-top-140">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title">
+                        <h6 class="sub-title">Testimonial</h6>
+                        <h2 class="title">What our users say</h2>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="testimonial-slider owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="testimonial-wrap">
+                                <div class="thumb">
+                                    <span class="avatar-icon"><i class="fas fa-utensils"></i></span>
+                                </div>
+                                <h5 class="name">Bukhara</h5>
+                                <p class="designation">New Delhi</p>
+                                <p>Swagat Suite reduced our table wait-to-order time significantly. Guests order
+                                    faster and service feels premium.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-wrap">
+                                <div class="thumb">
+                                    <span class="avatar-icon"><i class="fas fa-utensils"></i></span>
+                                </div>
+                                <h5 class="name">Masque</h5>
+                                <p class="designation">Mumbai</p>
+                                <p>Live status visibility improved trust. Customers now enjoy transparent updates
+                                    without follow-up calls.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-wrap">
+                                <div class="thumb">
+                                    <span class="avatar-icon"><i class="fas fa-utensils"></i></span>
+                                </div>
+                                <h5 class="name">Karavalli</h5>
+                                <p class="designation">Bengaluru</p>
+                                <p>Menu operations are smooth and instant. Daily updates happen in minutes with
+                                    zero confusion.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-wrap">
+                                <div class="thumb">
+                                    <span class="avatar-icon"><i class="fas fa-utensils"></i></span>
+                                </div>
+                                <h5 class="name">The Bombay Canteen</h5>
+                                <p class="designation">Mumbai</p>
+                                <p>Swagat Suite combines style with operational depth. Guest engagement and order
+                                    conversion both improved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--testimonial-area end-->
+
+    <!--contact-area start-->
+    <section id="contact" class="contact-area pd-top-130 pd-bottom-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center">
+                        <h6 class="sub-title">Contact</h6>
+                        <h2 class="title">Contact with us</h2>
+                        <p>Share your details and our team will connect with you shortly.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <form id="contactLeadForm" class="contact-form js-lead-form" data-source="ibne_contact_section">
+                        <div class="single-input-wrap">
+                            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="single-input-wrap">
+                            <input type="text" class="form-control" name="restaurantName"
+                                placeholder="Restaurant Name" required>
+                        </div>
+                        <div class="single-input-wrap">
+                            <input type="tel" class="form-control" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="single-input-wrap">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="lead-form-message" role="status" aria-live="polite"></div>
+                        <button type="submit" class="btn btn-main">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-xl-5 offset-xl-1 col-lg-6">
+                    <div class="contact-wrap">
+                        <h4>Talk to our team.</h4>
+                        <p>Have questions about Swagat Suite? Reach out and our team will walk you through setup,
+                            pricing, and a live demo.</p>
+                        <div class="media">
+                            <div class="thumb">
+                                <i class="far fa-envelope"></i>
+                            </div>
+                            <div class="media-body">
+                                <h5>Email Us</h5>
+                                <p><a href="mailto:hello@surfsyncinfotech.com">hello@surfsyncinfotech.com</a></p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="thumb style-2">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="media-body">
+                                <h5>Call Us</h5>
+                                <p><a href="tel:+919429694356">+91 94296 94356</a></p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="thumb style-3">
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                            <div class="media-body">
+                                <h5>Follow Us</h5>
+                                <p><a href="https://www.facebook.com/people/SurfSync-Infotech-Pvt-Ltd/61579342474194/"
+                                        target="_blank" rel="noreferrer">SurfSync Infotech Pvt Ltd</a></p>
+                                <p><a href="https://www.instagram.com/surfsync_infotech?igsh=dTRja3Y0Y2J4dWcw"
+                                        target="_blank" rel="noreferrer">@surfsync_infotech</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact-area end-->
+
+    <!--footer-area start-->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer-widget widget">
+                        <div class="about_us_widget">
+                            <a class="footer-logo" href="index.html">Swagat Suite</a>
+                            <p>Premium QR ordering and restaurant operations SaaS &mdash; built to welcome every
+                                guest.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget widget widget_nav_menu">
+                        <h4 class="widget-title">Useful link</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#how-it-works">How It Works</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget widget widget_nav_menu">
+                        <h4 class="widget-title">Get Started</h4>
+                        <ul>
+                            <li><a href="#" data-toggle="modal" data-target="#bookDemoModal">Book Demo</a></li>
+                            <li><a href="mailto:hello@surfsyncinfotech.com">hello@surfsyncinfotech.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer bottom-->
+        <div class="copyright-area text-center">
+            <div class="container">
+                <p>Copyrights &copy; 2026. All rights reserved by Swagat Suite</p>
+            </div>
+        </div>
+    </footer>
+    <!--footer-area end-->
+
+    <!--Book Demo modal start-->
+    <div class="modal fade" id="bookDemoModal" tabindex="-1" role="dialog" aria-labelledby="bookDemoModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookDemoModalLabel">Book your Swagat Suite demo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Share your details and our team will connect with you shortly.</p>
+                    <form id="leadForm" class="contact-form js-lead-form" data-source="ibne_landing_page">
+                        <div class="single-input-wrap">
+                            <input type="text" class="form-control" name="name"
+                                placeholder="Your Name" required>
+                        </div>
+                        <div class="single-input-wrap">
+                            <input type="text" class="form-control" name="restaurantName"
+                                placeholder="Restaurant Name" required>
+                        </div>
+                        <div class="single-input-wrap">
+                            <input type="tel" class="form-control" name="phone"
+                                placeholder="Phone Number" required>
+                        </div>
+                        <div class="single-input-wrap">
+                            <input type="email" class="form-control" name="email"
+                                placeholder="Email Address" required>
+                        </div>
+                        <div class="lead-form-message" role="status" aria-live="polite"></div>
+                        <button type="submit" class="btn btn-main">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Book Demo modal end-->
+
+    <!--JS Script-->
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/lead-form.js"></script>
+
+</body>
+
+</html>
